@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "plugins": {
+        "cache-thumbs": {
+            "name": "Cache Thumbs",
+            "repo": "https://github.com/robiso/cache-thumbs/tree/master",
+            "zip": "https://github.com/robiso/cache-thumbs/archive/master.zip",
+            "summary": "Cache theme/plugin thumbnails to make WonderCMS faster for the admin.",
+            "version": "3.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/cache-thumbs/master/preview.jpg"
+        }
+    }
+}
