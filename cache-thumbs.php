@@ -9,7 +9,7 @@ $Wcms->addListener('settings', function ($args) {
     $CACHE_DIR = $Wcms->dataPath . '/' . $CACHE_BASE;
     if (! file_exists($CACHE_DIR) && ! is_dir($CACHE_DIR)) {
         mkdir($CACHE_DIR);
-        file_put_contents("$CACHE_DIR/.htaccess", "Header set Cache-Control \"max-age=31536000\"\n");
+        file_put_contents("$CACHE_DIR/.htaccess", "<IfModule mod_headers.c>\nHeader set Cache-Control \"max-age=31536000\"\n</IfModule>\n");
     }
 
     preg_match_all('/https:\/\/raw\.githubusercontent\.com\/(.*?)\/(.*?)\/master\/preview\.jpg/m', $args[0], $matches, PREG_SET_ORDER, 0);
